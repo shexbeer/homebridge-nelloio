@@ -1,0 +1,35 @@
+{
+  "name": "homebridge-nelloio",
+  "version": "0.1.1",
+  "description": "Homebridge Plugin for Nello.io smart intercom system",
+  "license": "GPL-3.0",
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "plugin",
+    "Nello",
+    "Nello.io",
+    "lock",
+    "intercom",
+    "smart",
+    "homekit",
+    "siri"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shexbeer/homebridge-nelloio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shexbeer/homebridge-nelloio/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.3.0"
+  },
+  "dependencies": {
+    "request": "2.49.x",
+    "node-persist" : "2.0.x"
+  },
+  "homepage": "https://github.com/shexbeer/homebridge-nelloio#readme",
+  "author": "shexbeer"
+}
