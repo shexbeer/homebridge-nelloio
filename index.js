@@ -94,7 +94,7 @@ Nelloio.prototype = {
 		this.log("Trying to open");
 	    this._sendOpenRequest(this._getLocationIdFromStorage(), this._getUserIdFromStorage(), this._getSessionIdFromStorage());
     },
-    _nelloLoginRequest: function() {
+    _sendLoginRequest: function() {
     	var entryPoint = "/login"
 	    this.log("Send login to Nello.io '%s' on '%s'", this.nelloApiHost, entryPoint);
 	    this.runningRequest = true;
