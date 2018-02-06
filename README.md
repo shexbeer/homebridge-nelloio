@@ -23,6 +23,13 @@ With this password login homebridge user into app.
 --> your homebridge nello user is setup, you can login you own user into your nello app again
 --> enter the homebridge nello user credentials into your config.json
 
+## limitations
+
+* because there is no public api, we use a undocumented "private" api
+* password are stored plaintext on raspberry(!) to a normal user of nello
+* it just uses switch characterics for now (this needs to be changed to a fake lock device)
+* it just supports one location
+
 ## roapmap
 
 planned for version 0.2:
