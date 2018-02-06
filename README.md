@@ -20,9 +20,12 @@ Then logout your user from nello app and request a new password for homebridge u
 You'll receive a mail with a temporary password by mail.
 With this password login homebridge user into app.
 
---> your homebridge nello user is setup, you can login you own user into your nello app again
+--> if your homebridge nello user is setup, you can relogin your own user into your nello app again
+
 --> enter the homebridge nello user credentials into your config.json
+
 --> first switch on will do a login and persist session credential
+
 --> further switches will trigger a nello open
 
 ## limitations
