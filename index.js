@@ -68,7 +68,7 @@ Nelloio.prototype = {
 			this.log("Opening front door");
 			this.log("Looking for credentials sessionId:'%s' locationId:'%s' userId:'%s'.", this._isSessionIdSet(), this._isLocationIdSet(), this._isUserIdSet())
 			if(!this._isSessionIdSet() || !this._isLocationIdSet() || !this._isUserIdSet()) {
-				this.log("No session or location id found, will try to login" + on);
+				this.log("No session or location id found, will try to login");
 				this._nelloLogin();
 			} else {
 				this.log("Found all necessary credentials, trying to open");

@@ -1,6 +1,6 @@
 {
   "name": "homebridge-nelloio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Homebridge Plugin for Nello.io smart intercom system",
   "license": "GPL-3.0",
   "keywords": [
