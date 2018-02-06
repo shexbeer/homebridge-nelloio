@@ -22,3 +22,8 @@ With this password login homebridge user into app.
 
 --> your homebridge nello user is setup, you can login you own user into your nello app again
 --> enter the homebridge nello user credentials into your config.json
+
+## roapmap
+
+planned for version 0.2:
+* change characteristics to a fake lock
