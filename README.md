@@ -22,6 +22,8 @@ With this password login homebridge user into app.
 
 --> your homebridge nello user is setup, you can login you own user into your nello app again
 --> enter the homebridge nello user credentials into your config.json
+--> first switch on will do a login and persist session credential
+--> further switches will trigger a nello open
 
 ## limitations
 
@@ -29,6 +31,7 @@ With this password login homebridge user into app.
 * password are stored plaintext on raspberry(!) to a normal user of nello
 * it just uses switch characterics for now (this needs to be changed to a fake lock device)
 * it just supports one location
+* no relogin when session fails
 
 ## roapmap
 
