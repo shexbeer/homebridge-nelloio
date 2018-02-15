@@ -18,17 +18,16 @@ function Nelloio(log, config) {
     this._state = !this.default_state_off;
 
 
-	var informationService = new Service.AccessoryInformation();
-    informationService
+	this._informationService = new Service.AccessoryInformation();
+    this._informationService
             .setCharacteristic(Characteristic.Manufacturer, "Nello")
             .setCharacteristic(Characteristic.Model, "Nello smart intercom")
             .setCharacteristic(Characteristic.SerialNumber, "Not available");
-    switchService = new Service.Switch(this.name);
-    switchService
+
+    this._switchService = new Service.Switch(this.name);
+    this._switchService
             .getCharacteristic(Characteristic.On)
             .on('set', this.setPowerState.bind(this));
-
-    this._service = switchService;
 
     this.log = log;
     this.name = config.name;
@@ -58,7 +57,7 @@ Nelloio.prototype = {
     },
 
     getServices: function () {
-        return [this._service];
+        return [this._switchService, this._informationService];
     },
 
     setPowerState: function(powerOn, callback) {
@@ -78,10 +77,10 @@ Nelloio.prototype = {
 			this._setTimeout();
 
 			this._state = true;
-			this._service.getCharacteristic(Characteristic.On).updateValue(true);
+			this._switchService.getCharacteristic(Characteristic.On).updateValue(true);
     	} else {
     		this._state = false;
-    		this._service.getCharacteristic(Characteristic.On).updateValue(false);
+    		this._switchService.getCharacteristic(Characteristic.On).updateValue(false);
     	}
 		callback();
     },
@@ -250,7 +249,7 @@ Nelloio.prototype = {
 
 Nelloio.prototype._setTimeout = function() {
 	setTimeout(function() {
-		this._service.setCharacteristic(Characteristic.On, false);
+		this._switchService.setCharacteristic(Characteristic.On, false);
 	}.bind(this), 1000);
 }
 

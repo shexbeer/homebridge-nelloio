@@ -36,6 +36,14 @@ With this password login homebridge user into app.
 * it just supports one location
 * no relogin when session fails
 
+## changelog
+
+* v0.1.6:
+Fixed a bug were manufacturer and model were missing in Homekit
+
+* v0.1.4:
+Initial  release version
+
 ## roapmap
 
 planned for version 0.2:
