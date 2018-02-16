@@ -44,7 +44,7 @@ Fixed a bug were manufacturer and model were missing in Homekit
 * v0.1.4:
 Initial  release version
 
-## roapmap
+## roadmap
 
 planned for version 0.2:
 * change characteristics to a fake lock
